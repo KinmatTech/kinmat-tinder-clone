@@ -26,11 +26,6 @@ function TinderCards()  {
             "https://cdn.britannica.com/56/199056-050-CCC44482/Jeff-Bezos-2017.jpg",
         },
 
-        {
-            name: "Beautiful Lady",
-            url:
-            "https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg",
-        },
     ]);
 
     const swiped = (direction, nameToDelete) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css";
-import {BsPersonSquare} from "react-icons/bs";
+import {MdPerson} from "react-icons/md";
 import {MdForum} from "react-icons/md";
 import IconButton from "@mui/material/IconButton";
 
@@ -8,21 +8,19 @@ function Header() {
   return (
     <div className='header'>
 
-    <IconButton size="large">
-            <BsPersonSquare fontSize="Large" 
-            className="header_Icon" />
+    <IconButton className="header_person">
+            <MdPerson fontSize="larger" />
     </IconButton>
 
-      <IconButton size="large">
+      <IconButton>
       <img
       className= "header_logo" 
       src="../../tinder-logo.png" alt =""
       />
     </IconButton>
 
-    <IconButton size="large">
-      <MdForum fontsize="large" 
-      className= "header_icon" />
+    <IconButton className="header_forum">
+      <MdForum fontsize="large"  />
       </IconButton>
       
     </div>

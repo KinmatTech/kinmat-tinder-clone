@@ -11,7 +11,15 @@
     height:40px;
 }
 
-.header_icon {
-    padding:20px;
-    
-}
+
+.header_forum{
+    height:40px;
+    padding: 1vw !important;
+    color: #000 !important;
+    }
+
+.header_person{
+    height:40px;
+    padding: 1vw !important;
+    color: #000 !important;
+    }
