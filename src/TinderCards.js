@@ -5,13 +5,7 @@ import "./TinderCards.css";
 
 function TinderCards()  {
     const [people, setPeople] = useState([
-     
-        {
-            name: "Beauty",
-            url:
-            "https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg",
-        },
-                
+        
         {
             name: "Elon Musk",
             url:
@@ -25,6 +19,13 @@ function TinderCards()  {
             
             "https://cdn.britannica.com/56/199056-050-CCC44482/Jeff-Bezos-2017.jpg",
         },
+
+        {
+            name: "Beauty",
+            url:
+            "https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg",
+        },
+            
 
     ]);
 
