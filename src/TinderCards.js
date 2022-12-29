@@ -7,11 +7,23 @@ function TinderCards()  {
     const [people, setPeople] = useState([
         
         {
+            name: "Nelson Mandella",
+            url:
+            "https://cdn.britannica.com/67/75567-050-4EBBE84D/Nelson-Mandela.jpg",
+        },
+        
+
+        {
             name: "Elon Musk",
             url:
             "https://upload.wikimedia.org/wikipedia/commons/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg",
         },
 
+        {
+            name: "Thomas Edison",
+            url:
+            "https://cdn.britannica.com/47/79847-050-A78604A0/Thomas-Alva-Edison.jpg",
+        },
         
         {
             name: "Jeff Bezos",
@@ -21,11 +33,10 @@ function TinderCards()  {
         },
 
         {
-            name: "Beauty",
+            name: "Warren Buffet",
             url:
-            "https://images.pexels.com/photos/871495/pexels-photo-871495.jpeg",
-        },
-            
+            "https://cdn.britannica.com/89/188789-050-51EA5258/Warren-Buffett.jpg",
+        },  
 
     ]);
 
