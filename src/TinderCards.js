@@ -25,7 +25,7 @@ function TinderCards() {
   useEffect(() => {
     async function fetchData() {
       // cuz base url already set up in axios.js
-      const req = await axios.get("/tinderdb/cards");
+      const req = await axios.get("/tinder/cards");
 
       // whatever the request.data comes back us
       setPeople(req.data);
