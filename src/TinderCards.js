@@ -4,42 +4,21 @@ import "./TinderCards.css";
 import axios from "./axios";
 
 function TinderCards() {
-  // initialize with empty array
-  const [people, setPeople] = useState([]);
-
-  //   const [people, setPeople] = useState([
-  //     {
-  //       name: "Elon Musk",
-  //       url:
-  //         "https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg",
-  //     },
-  //     {
-  //       name: "Jeff Bezoz",
-  //       url:
-  //         "https://www.biography.com/.image/t_share/MTY2NzA3ODE3OTgwMzcyMjYw/jeff-bezos-andrew-harrer_bloomberg-via-getty-images.jpg",
-  //     },
-  //   ]);
-
-  //   when tinder cards component loads it will run this piece code once, and not run it again
-  // add var to bottom bracket, whenever var name changes it's actually gonna refile this code
-  useEffect(() => {
-    async function fetchData() {
-      // cuz base url already set up in axios.js
+      const [people, setPeople] = useState([]);
+    useEffect (() => {
+      async function fetchData() {
       const req = await axios.get("/tinder/cards");
 
-      // whatever the request.data comes back us
       setPeople(req.data);
     }
-
+  
     fetchData();
   }, []);
 
-  //   console.log(people);
-
+     
   const swiped = (direction, nameToDelete) => {
     console.log("removing: " + nameToDelete);
-    // setLastDirection(direction);
-  };
+     };
 
   const outOfFrame = (name) => {
     console.log(name + " left the screen!");
@@ -53,12 +32,12 @@ function TinderCards() {
             className="swipe"
             key={person.name}
             preventSwipe={["up", "down"]}
-            noSwipe={(dir) => swiped(dir, person.name)}
-            noCardLeftScreen={() => outOfFrame(person.name)}
+            onSwipe={(dir) => swiped(dir, person.name)}
+            onCardLeftScreen={() => outOfFrame(person.name)}
           >
             <div
               style={{ backgroundImage: `url(${person.imgUrl})` }}
-              className="card"
+              className="cards"
             >
               <h3>{person.name}</h3>
             </div>
